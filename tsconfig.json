@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "baseUrl": "./src",
+    "outDir": "./dist", // The directory which we'll be exporting our compiled JavaScript files to
+    "lib": ["ESNext", "DOM"],
+    "paths": {
+      "root/*": ["*"],
+      "components/*": ["components/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "build"]
+}

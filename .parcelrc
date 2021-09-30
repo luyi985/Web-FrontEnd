@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "@parcel/config-default"
+  ],
+  "resolvers": [
+    "@parcel/resolver-default"
+  ],
+  "transformers": {
+    "*.vue": [
+      "@parcel/transformer-vue"
+    ],
+    "*.scss": [
+      "@parcel/transformer-sass"
+    ],
+    "*.js": [
+      "@parcel/transformer-babel"
+    ],
+    "*.css": [
+      "@parcel/transformer-postcss"
+    ],
+    "*.html": [
+      "@parcel/transformer-posthtml"
+    ],
+    "*.{ts,tsx}": [
+      "@parcel/transformer-typescript-tsc"
+    ]
+  },
+  "bundler": "@parcel/bundler-default",
+  "namers": [
+    "@parcel/namer-default"
+  ],
+  "runtimes": [
+    "@parcel/runtime-js",
+    "@parcel/runtime-browser-hmr"
+  ],
+  "packagers": {
+    "*.js": "@parcel/packager-js",
+    "*.css": "@parcel/packager-css",
+    "*.html": "@parcel/packager-html",
+    "*.wasm": "@parcel/packager-wasm",
+    "*.raw": "@parcel/packager-raw"
+  },
+  "optimizers": {
+    "*.js": [
+      "@parcel/optimizer-uglify"
+    ],
+    "*.css": [
+      "@parcel/optimizer-cssnano"
+    ],
+    "*.html": [
+      "@parcel/optimizer-htmlnano"
+    ],
+    "*.{png,jpg,jpeg,svg,...}": [
+      "@parcel/optimizer-imagemin"
+    ]
+  },
+  "reporters": [
+    "@parcel/reporter-cli"
+  ]
+}

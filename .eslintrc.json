@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "ignorePatterns": ["node_modules", "dist", "build"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "jest"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "no-unused-vars": 0,
+    "no-console": 0
+  }
+}

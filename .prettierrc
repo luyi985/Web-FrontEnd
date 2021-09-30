@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
+    ],
+    "semi": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "printWidth": 80
+}
